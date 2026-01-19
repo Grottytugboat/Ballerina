@@ -1,6 +1,7 @@
 import { generateMetadata, defaultKeywords } from "@/lib/metadata";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
+import ScrollReveal from "@/components/ScrollReveal";
 import Link from "next/link";
 
 export const metadata = generateMetadata({
@@ -33,8 +34,7 @@ export default function Home() {
   return (
     <>
       <Hero
-        imageSrc={undefined}
-        imageAlt="[PLACEHOLDER IMAGE] Hero image for Ballerina"
+        videoSrc="/hero-video.mp4"
         tagline="Precision in celebration"
       />
 
@@ -42,7 +42,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="max-w-3xl">
             <p className="text-xl md:text-2xl font-light leading-relaxed text-primary/90">
-              Melbourne's most trusted event coordinator, now crafting private
+              Melbourne&apos;s most trusted event coordinator, now crafting private
               celebrations in the Macedon Ranges.
             </p>
           </div>

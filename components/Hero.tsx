@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 interface HeroProps {
   imageSrc?: string;
+  videoSrc?: string;
   imageAlt?: string;
   tagline?: string;
   overlay?: boolean;
@@ -9,13 +13,35 @@ interface HeroProps {
 
 export default function Hero({
   imageSrc,
+  videoSrc,
   imageAlt = "Hero image",
   tagline = "Precision in celebration",
   overlay = true,
 }: HeroProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        // Autoplay was prevented, which is fine
+        console.log("Video autoplay prevented:", error);
+      });
+    }
+  }, []);
+
   return (
-    <div className="relative w-full h-[70vh] min-h-[500px] max-h-[800px]">
-      {imageSrc ? (
+    <div className="relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden">
+      {videoSrc ? (
+        <video
+          ref={videoRef}
+          src={videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      ) : imageSrc ? (
         <Image
           src={imageSrc}
           alt={imageAlt}

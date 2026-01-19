@@ -22,7 +22,7 @@ export default function About() {
 
       <div className="prose prose-lg max-w-none space-y-8 text-primary/90 leading-relaxed">
         <p className="text-xl font-light">
-          Nicole spent half a decade behind the scenes of Melbourne's most
+          Nicole spent half a decade behind the scenes of Melbourne&apos;s most
           demanding events — the kind where the champagne is Dom Pérignon and
           the margin for error is zero. Now she brings that same obsessive
           precision to private celebrations, minus the corporate red tape.
@@ -33,7 +33,7 @@ export default function About() {
             The Foundation
           </h2>
           <p>
-            Nicole's career in event coordination began at Fenix Events in
+            Nicole&apos;s career in event coordination began at Fenix Events in
             Richmond, where she spent two years orchestrating weddings and
             corporate events. The scope was broad: intimate dinners for 20,
             full-scale weddings for 220, pharmaceutical seminars, product
@@ -46,7 +46,7 @@ export default function About() {
             food&desire
           </h2>
           <p>
-            From Fenix, Nicole joined food&desire, one of Melbourne's most
+            From Fenix, Nicole joined food&desire, one of Melbourne&apos;s most
             prestigious event companies. She worked across their venue portfolio,
             each space presenting its own set of challenges and opportunities.
           </p>
@@ -68,7 +68,7 @@ export default function About() {
                 Carousel, Albert Park Lake
               </h3>
               <p className="text-sm text-primary/70">
-                Lakeside weddings and events. The venue's natural setting
+                Lakeside weddings and events. The venue&apos;s natural setting
                 required seamless integration of indoor and outdoor elements.
               </p>
             </div>
@@ -85,7 +85,7 @@ export default function About() {
           </div>
 
           <p className="mt-6">
-            Nicole's progression at food&desire was methodical: Venue Event
+            Nicole&apos;s progression at food&desire was methodical: Venue Event
             Coordinator → Catering Sales Executive → Venues Event Procedures &
             Administration. Each role deepened her understanding of what it
             takes to execute flawlessly at scale.
@@ -99,7 +99,7 @@ export default function About() {
           <p>
             Over five years, Nicole delivered events for clients including Rolls
             Royce, Jaguar, Formula 1 Australian Grand Prix, pharmaceutical
-            companies, and Melbourne's corporate elite. These weren't just
+            companies, and Melbourne&apos;s corporate elite. These weren&apos;t just
             events; they were brand experiences where precision was non-negotiable.
           </p>
         </section>
@@ -115,7 +115,7 @@ export default function About() {
             restaurants — into seamless event spaces.
           </p>
           <p>
-            Not tied to any single venue, Nicole works wherever the client's
+            Not tied to any single venue, Nicole works wherever the client&apos;s
             vision takes her. The same precision that executed Formula 1 events
             now transforms a private property into a celebration space. The
             margin for error remains zero.

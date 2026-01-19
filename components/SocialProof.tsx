@@ -1,10 +1,43 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+
+interface ClientLogo {
+  name: string;
+  logoPath?: string;
+  alt: string;
+}
+
 export default function SocialProof() {
-  const clients = [
-    "Rolls Royce",
-    "Jaguar",
-    "Formula 1",
-    "Pharmaceutical Companies",
+  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
+
+  const clients: ClientLogo[] = [
+    {
+      name: "Rolls Royce",
+      logoPath: "/images/logos/rolls-royce.png",
+      alt: "Rolls Royce logo",
+    },
+    {
+      name: "Jaguar",
+      logoPath: "/images/logos/jaguar.png",
+      alt: "Jaguar logo",
+    },
+    {
+      name: "Formula 1",
+      logoPath: "/images/logos/formula1.png",
+      alt: "Formula 1 logo",
+    },
+    {
+      name: "Pharmaceutical Companies",
+      logoPath: "/images/logos/pharmaceutical.png",
+      alt: "Pharmaceutical companies logo",
+    },
   ];
+
+  const handleImageError = (index: number) => {
+    setImageErrors((prev) => ({ ...prev, [index]: true }));
+  };
 
   return (
     <section className="py-16 border-y border-primary/10">
@@ -16,9 +49,23 @@ export default function SocialProof() {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="text-lg md:text-xl font-light tracking-wide text-primary/80"
+              className="flex items-center justify-center h-12 md:h-16 opacity-60 hover:opacity-100 transition-opacity"
             >
-              {client}
+              {client.logoPath && !imageErrors[index] ? (
+                <Image
+                  src={client.logoPath}
+                  alt={client.alt}
+                  width={120}
+                  height={60}
+                  className="h-full w-auto object-contain"
+                  style={{ filter: "grayscale(100%)" }}
+                  onError={() => handleImageError(index)}
+                />
+              ) : (
+                <span className="text-lg md:text-xl font-light tracking-wide text-primary/80">
+                  {client.name}
+                </span>
+              )}
             </div>
           ))}
         </div>
