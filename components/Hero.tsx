@@ -60,11 +60,11 @@ export default function Hero({
         <div className="w-full h-full bg-accent/20 z-0" />
       )}
       {overlay && (
-        <div className="absolute inset-0 bg-primary/20 z-10" />
+        <div className="absolute inset-0 bg-primary/50 z-10" />
       )}
       <div className="absolute inset-0 flex items-center justify-start px-6 lg:px-16 z-20">
         <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-wider text-background uppercase mb-4 drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-wider text-background uppercase mb-4 drop-shadow-2xl [text-shadow:_0_2px_8px_rgba(0,0,0,0.8)]">
             {tagline}
           </h1>
         </div>
