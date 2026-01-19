@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     "luxury wedding planner Melbourne",
     "high end event coordinator Victoria",
   ],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
