@@ -16,7 +16,7 @@ export const metadata = generateMetadata({
 
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-20">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-wider uppercase mb-8 md:mb-12">
         About Nicole
       </h1>
@@ -33,7 +33,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="prose prose-lg max-w-none space-y-8 text-primary/90 leading-relaxed">
+      <div className="max-w-none space-y-8 text-primary/90 leading-relaxed">
         <p className="text-xl font-light">
           Nicole spent half a decade behind the scenes of Melbourne&apos;s most
           demanding events — the kind where the champagne is Dom Pérignon and
