@@ -24,7 +24,7 @@ export default function About() {
       <div className="mb-12 md:mb-16">
         <div className="relative w-full aspect-[4/3] md:aspect-[16/10] max-w-2xl mx-auto">
           <Image
-            src="/images/nicole.png"
+            src="/images/nicole.jpg"
             alt="Nicole - Wedding and Event Planner"
             fill
             className="object-cover"
