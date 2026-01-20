@@ -38,14 +38,6 @@ export default function Contact() {
             <div className="space-y-3 text-sm text-primary/80">
               <p>
                 <a
-                  href="mailto:nicole@ballerina.com.au"
-                  className="hover:text-primary transition-colors underline"
-                >
-                  nicole@ballerina.com.au
-                </a>
-              </p>
-              <p>
-                <a
                   href="tel:+61413851171"
                   className="hover:text-primary transition-colors underline"
                 >

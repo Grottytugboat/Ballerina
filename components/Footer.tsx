@@ -21,14 +21,6 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-background/80">
               <p>
                 <a
-                  href="mailto:nicole@ballerina.com.au"
-                  className="hover:text-background transition-colors"
-                >
-                  nicole@ballerina.com.au
-                </a>
-              </p>
-              <p>
-                <a
                   href="tel:+61413851171"
                   className="hover:text-background transition-colors"
                 >
