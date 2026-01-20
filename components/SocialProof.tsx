@@ -1,72 +1,65 @@
-"use client";
-
-import Image from "next/image";
-import { useState } from "react";
-
-interface ClientLogo {
-  name: string;
-  logoPath?: string;
-  alt: string;
-}
-
 export default function SocialProof() {
-  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
-
-  const clients: ClientLogo[] = [
-    {
-      name: "Rolls Royce",
-      logoPath: "/images/logos/rolls-royce.png",
-      alt: "Rolls Royce logo",
-    },
-    {
-      name: "Jaguar",
-      logoPath: "/images/logos/jaguar.png",
-      alt: "Jaguar logo",
-    },
-    {
-      name: "Formula 1",
-      logoPath: "/images/logos/formula1.png",
-      alt: "Formula 1 logo",
-    },
-    {
-      name: "Pharmaceutical Companies",
-      logoPath: "/images/logos/pharmaceutical.png",
-      alt: "Pharmaceutical companies logo",
-    },
+  const brands = [
+    "Christian Dior",
+    "Hermes",
+    "Visy",
+    "Zagame Automotive",
+    "Ferrari",
+    "Jellis Craig",
+    "VRC",
+    "Lamborghini",
+    "Porsche",
+    "Bentleigh",
+    "Lexus",
+    "Furphy",
+    "Chemist Warehouse",
+    "Loreal",
+    "BMW",
+    "AFL",
+    "REA",
+    "Ducati",
+    "Goldman Sachs",
+    "Tourism Australia",
+    "Mecca",
+    "Maybeline",
+    "Nine",
+    "Honda",
+    "NAB",
+    "Allens",
+    "Tik Tok",
+    "Buxton",
+    "Aime",
+    "Brandbank",
+    "Lulu Lemon",
+    "Frontier Touring",
+    "Kookai",
+    "Prada",
+    "Team Event",
+    "Foxtel",
+    "Toyota",
+    "CSL",
+    "Shell",
+    "BHP",
+    "Hays",
+    "YPO",
+    "Frank Body",
+    "University of Melbourne",
   ];
 
-  const handleImageError = (index: number) => {
-    setImageErrors((prev) => ({ ...prev, [index]: true }));
-  };
-
   return (
-    <section className="py-12 md:py-16 border-y border-primary/10">
+    <section className="py-16 md:py-24 border-y border-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-sm tracking-wide uppercase text-primary/60 mb-8 text-center">
-          Past clients include
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12">
-          {clients.map((client, index) => (
-            <div
+        <h2 className="text-sm tracking-wider uppercase text-primary/60 mb-12 md:mb-16 text-center">
+          Brands we&apos;ve worked with
+        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-8 md:gap-y-6">
+          {brands.map((brand, index) => (
+            <span
               key={index}
-              className="flex items-center justify-center h-10 sm:h-12 md:h-16 opacity-60 hover:opacity-100 transition-opacity"
+              className="text-sm md:text-base font-light tracking-wide text-primary/70"
             >
-              {client.logoPath && !imageErrors[index] ? (
-                <Image
-                  src={client.logoPath}
-                  alt={client.alt}
-                  width={120}
-                  height={60}
-                  className="h-full w-auto object-contain"
-                  style={{ filter: "grayscale(100%)" }}
-                  onError={() => handleImageError(index)}
-                />
-              ) : (
-                <span className="text-lg md:text-xl font-light tracking-wide text-primary/80">
-                  {client.name}
-                </span>
-              )}
-            </div>
+              {brand}
+            </span>
           ))}
         </div>
       </div>
