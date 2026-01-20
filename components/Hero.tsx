@@ -36,7 +36,7 @@ export default function Hero({
   };
 
   return (
-    <div className="relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden bg-accent/20">
+    <div className="relative w-full h-[60vh] sm:h-[65vh] md:h-[70vh] min-h-[400px] sm:min-h-[450px] md:min-h-[500px] max-h-[800px] overflow-hidden bg-accent/20">
       {videoSrc && !videoError ? (
         <video
           ref={videoRef}
@@ -62,9 +62,9 @@ export default function Hero({
       {overlay && (
         <div className="absolute inset-0 bg-primary/50 z-10" />
       )}
-      <div className="absolute inset-0 flex items-center justify-start px-6 lg:px-16 z-20">
+      <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-6 md:px-8 lg:px-16 z-20">
         <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-wider text-background uppercase mb-4 drop-shadow-2xl [text-shadow:_0_2px_8px_rgba(0,0,0,0.8)]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium tracking-wider text-background uppercase mb-4 drop-shadow-2xl [text-shadow:_0_2px_8px_rgba(0,0,0,0.8)]">
             {tagline}
           </h1>
         </div>

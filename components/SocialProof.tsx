@@ -40,16 +40,16 @@ export default function SocialProof() {
   };
 
   return (
-    <section className="py-16 border-y border-primary/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-12 md:py-16 border-y border-primary/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-sm tracking-wide uppercase text-primary/60 mb-8 text-center">
           Past clients include
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center h-12 md:h-16 opacity-60 hover:opacity-100 transition-opacity"
+              className="flex items-center justify-center h-10 sm:h-12 md:h-16 opacity-60 hover:opacity-100 transition-opacity"
             >
               {client.logoPath && !imageErrors[index] ? (
                 <Image

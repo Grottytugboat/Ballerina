@@ -16,8 +16,8 @@ export default function ContactForm() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      // Formspree endpoint - replace with actual Formspree form ID
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      // Formspree endpoint
+      const response = await fetch("https://formspree.io/f/xwvvqbkw", {
         method: "POST",
         body: formData,
         headers: {
@@ -165,20 +165,6 @@ export default function ContactForm() {
         </div>
       )}
 
-      <div className="pt-8 border-t border-primary/10 text-sm text-primary/60">
-        <p>
-          <strong className="text-primary">Note:</strong> Replace{" "}
-          <code className="bg-primary/5 px-1">YOUR_FORM_ID</code> in{" "}
-          <code className="bg-primary/5 px-1">components/ContactForm.tsx</code>{" "}
-          with your actual Formspree form ID. Or email directly at{" "}
-          <a
-            href="mailto:nicole@ballerina.com.au"
-            className="text-primary underline hover:opacity-70"
-          >
-            nicole@ballerina.com.au
-          </a>
-        </p>
-      </div>
     </div>
   );
 }

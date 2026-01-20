@@ -53,16 +53,16 @@ export default function Services() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 lg:px-8 py-20">
-      <h1 className="text-4xl md:text-5xl font-medium tracking-wider uppercase mb-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-wider uppercase mb-4">
         Services
       </h1>
-      <p className="text-lg text-primary/70 mb-16 max-w-2xl">
+      <p className="text-base sm:text-lg text-primary/70 mb-12 md:mb-16 max-w-2xl">
         From full wedding planning to day-of coordination, we bring precision to
         every celebration.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         {services.map((service) => (
           <ScrollReveal key={service.number} delay={service.number * 0.1}>
             <ServiceCard
@@ -74,17 +74,6 @@ export default function Services() {
         ))}
       </div>
 
-      <div className="mt-20 pt-12 border-t border-primary/10">
-        <p className="text-sm text-primary/60 mb-4">
-          See our work in action
-        </p>
-        <Link
-          href="/work"
-          className="text-sm tracking-wide uppercase hover:opacity-70 transition-opacity"
-        >
-          View Portfolio →
-        </Link>
-      </div>
     </div>
   );
 }

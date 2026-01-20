@@ -1,4 +1,5 @@
 import { generateMetadata, defaultKeywords } from "@/lib/metadata";
+import Image from "next/image";
 
 export const metadata = generateMetadata({
   title: "About Nicole | Wedding Planner Kyneton & Macedon Ranges",
@@ -15,10 +16,22 @@ export const metadata = generateMetadata({
 
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-      <h1 className="text-4xl md:text-5xl font-medium tracking-wider uppercase mb-12">
+    <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-20">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-wider uppercase mb-8 md:mb-12">
         About Nicole
       </h1>
+
+      <div className="mb-12 md:mb-16">
+        <div className="relative w-full aspect-[4/3] md:aspect-[16/10] max-w-2xl mx-auto">
+          <Image
+            src="/images/nicole.png"
+            alt="Nicole - Wedding and Event Planner"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </div>
 
       <div className="prose prose-lg max-w-none space-y-8 text-primary/90 leading-relaxed">
         <p className="text-xl font-light">

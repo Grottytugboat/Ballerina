@@ -16,16 +16,16 @@ export const metadata = generateMetadata({
 
 export default function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-      <h1 className="text-4xl md:text-5xl font-medium tracking-wider uppercase mb-4">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-wider uppercase mb-4">
         Contact
       </h1>
-      <p className="text-lg text-primary/70 mb-12 max-w-2xl">
+      <p className="text-base sm:text-lg text-primary/70 mb-8 md:mb-12 max-w-2xl">
         Start a conversation about your celebration. Based in Kyneton, serving
         Macedon Ranges, Melbourne & Regional Victoria.
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         <div>
           <ContactForm />
         </div>
@@ -46,10 +46,10 @@ export default function Contact() {
               </p>
               <p>
                 <a
-                  href="tel:[PHONE NUMBER]"
+                  href="tel:+61413851171"
                   className="hover:text-primary transition-colors underline"
                 >
-                  [PHONE NUMBER]
+                  0413 851 171
                 </a>
               </p>
             </div>

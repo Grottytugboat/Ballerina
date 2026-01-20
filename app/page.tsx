@@ -38,10 +38,10 @@ export default function Home() {
         tagline="Precision in celebration"
       />
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <ScrollReveal>
           <div className="max-w-3xl">
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-primary/90">
+            <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed text-primary/90">
               Melbourne&apos;s most trusted event coordinator, now crafting private
               celebrations in the Macedon Ranges.
             </p>
@@ -49,8 +49,8 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-8">
           {differentiators.map((item, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
               <div className="space-y-4">
@@ -68,7 +68,7 @@ export default function Home() {
 
       <SocialProof />
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20 text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 text-center">
         <ScrollReveal>
           <Link
             href="/contact"

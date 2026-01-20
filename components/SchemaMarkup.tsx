@@ -8,7 +8,7 @@ export default function SchemaMarkup() {
     description:
       "Luxury wedding and event planning services in Kyneton, Macedon Ranges, and Melbourne. Precision in celebration.",
     url: "https://ballerina.com.au",
-    telephone: "[PHONE NUMBER]",
+    telephone: "+61413851171",
     email: "nicole@ballerina.com.au",
     address: {
       "@type": "PostalAddress",

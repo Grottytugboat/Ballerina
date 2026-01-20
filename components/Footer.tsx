@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-primary text-background mt-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div>
             <h3 className="text-xl font-medium tracking-wider uppercase mb-4">
               Ballerina
@@ -29,10 +29,10 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="tel:[PHONE NUMBER]"
+                  href="tel:+61413851171"
                   className="hover:text-background transition-colors"
                 >
-                  [PHONE NUMBER]
+                  0413 851 171
                 </a>
               </p>
               <p className="mt-4">Based in Kyneton</p>
@@ -56,12 +56,6 @@ export default function Footer() {
                 className="block hover:text-background transition-colors"
               >
                 Services
-              </Link>
-              <Link
-                href="/work"
-                className="block hover:text-background transition-colors"
-              >
-                Work
               </Link>
               <Link
                 href="/contact"
