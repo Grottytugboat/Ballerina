@@ -25,19 +25,25 @@ export default function ContactForm() {
         },
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && !data.error) {
         setStatus("success");
         setMessage("Thank you. Your message has been sent.");
         e.currentTarget.reset();
       } else {
-        const data = await response.json();
-        throw new Error(data.error || "Something went wrong");
+        // Formspree sometimes returns 200 with errors in the body
+        const errorMessage = data.error || data.errors?.[0]?.message || "Something went wrong";
+        setStatus("error");
+        setMessage(`Sorry, there was an error: ${errorMessage}. Please try again or call 0413 851 171.`);
       }
     } catch (error) {
+      // Network error or JSON parsing error
       setStatus("error");
       setMessage(
-        "Sorry, there was an error sending your message. Please try again or email directly."
+        "Sorry, there was an error sending your message. Please try again or call 0413 851 171."
       );
+      console.error("Form submission error:", error);
     }
   };
 
